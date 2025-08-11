@@ -6,38 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zurab Jashi | Personal Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">Zurab Jashi</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="tutoring.html">Tutoring</a></li>
-                <li><a href="blog.html">Blog</a></li>
+    <!-- HEADER AND NAVIGATION -->
+    <header class="l-header">
+        <nav class="nav">
+            <div class="nav__logo">Zurab Jashi</div>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#tutoring" class="nav__link">Tutoring</a></li>
+                <li><a href="#blog" class="nav__link">Blog</a></li>
             </ul>
+            <div id="nav-toggle" class="nav__toggle">&#9776;</div>
         </nav>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Welcome to My Website</h1>
-            <p>I'm a Data Engineer, Python Enthusiast, and aspiring Quant. Explore my work, blog, and tutoring services.</p>
-            <a href="projects.html" class="cta-button">Explore Projects</a>
+    <!-- HERO SECTION -->
+    <section id="home" class="home">
+        <div class="home__data">
+            <h1 class="home__title">Hi, I'm Zurab Jashi</h1>
+            <p class="home__description">Data Engineer | Python Enthusiast | Aspiring Quant</p>
+            <a href="#projects" class="button">Explore My Projects</a>
         </div>
     </section>
 
-    <footer>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about__container">
+            <p>I am a Data Engineer at the Bank of Georgia, specializing in Python, Spark, and Databricks. I also have a background in Machine Learning and Quantitative Finance. My passion lies in solving complex problems using data.</p>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects__container">
+            <!-- Add your projects here -->
+            <div class="project__card">
+                <h3>Project 1</h3>
+                <p>Short description of your project.</p>
+            </div>
+            <div class="project__card">
+                <h3>Project 2</h3>
+                <p>Short description of your project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TUTORING SECTION -->
+    <section id="tutoring" class="section">
+        <h2 class="section-title">Tutoring</h2>
+        <div class="contact__form">
+            <h3>Contact me for tutoring services!</h3>
+            <form id="tutoring-form">
+                <input type="text" id="name" class="contact__input" placeholder="Full Name" required>
+                <input type="email" id="email" class="contact__input" placeholder="Email" required>
+                <textarea id="message" class="contact__input" placeholder="Message" required></textarea>
+                <button type="submit" class="contact__button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section id="blog" class="section">
+        <h2 class="section-title">My Blog</h2>
+        <p>Coming soon!</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
         <p>&copy; 2025 Zurab Jashi | All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
 
 </html>
+
 
