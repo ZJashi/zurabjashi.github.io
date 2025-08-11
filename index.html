@@ -1,37 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to My Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F9F9F9;
+    color: #333;
+    line-height: 1.6;
+}
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="tutoring.html">Tutoring</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
+a {
+    text-decoration: none;
+}
 
-    <section id="home">
-        <h1>Welcome to My Personal Website</h1>
-        <p>Hi, I'm Zurab Jashi. I’m a Data Engineer, Python Enthusiast, and aspiring Quant. Explore my work, blog, and tutoring services below!</p>
-    </section>
+header {
+    background-color: #ffffff;
+    padding: 20px 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
 
-    <footer>
-        <p>&copy; 2025 Zurab Jashi | All rights reserved.</p>
-    </footer>
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    <script src="script.js"></script>
-</body>
+nav .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #007BFF;
+}
 
-</html>
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-weight: 500;
+    color: #333;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+#hero {
+    background-color: #e8f4ff;
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('https://via.placeholder.com/1500x700');
+    background-size: cover;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
