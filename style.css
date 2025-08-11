@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #F9F9F9;
-    color: #333;
+    background-color: #F9F9F9; /* Light background */
+    color: #333; /* Dark text for contrast */
     line-height: 1.6;
 }
 
@@ -19,7 +19,7 @@ a {
 header {
     background-color: #ffffff;
     padding: 20px 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
     position: fixed;
     top: 0;
     width: 100%;
@@ -30,12 +30,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 nav .logo {
     font-size: 24px;
     font-weight: 600;
-    color: #007BFF;
+    color: #007BFF; /* Brand color */
 }
 
 nav ul {
@@ -48,6 +50,7 @@ nav ul li a {
     font-weight: 500;
     color: #333;
     font-size: 16px;
+    text-transform: uppercase; /* All caps for links */
 }
 
 nav ul li a:hover {
@@ -55,13 +58,16 @@ nav ul li a:hover {
     transition: color 0.3s ease;
 }
 
+/* Hero Section */
 #hero {
-    background-color: #e8f4ff;
+    background-color: #e8f4ff; /* Soft blue background */
     text-align: center;
     padding: 100px 20px;
-    background-image: url('https://via.placeholder.com/1500x700');
+    background-image: url('https://via.placeholder.com/1500x700'); /* Background image */
     background-size: cover;
+    background-position: center;
     color: white;
+    box-shadow: inset 0 0 300px rgba(0, 0, 0, 0.2); /* Light shadow to enhance text visibility */
 }
 
 .hero-content h1 {
@@ -73,6 +79,7 @@ nav ul li a:hover {
 .hero-content p {
     font-size: 20px;
     margin-bottom: 30px;
+    font-weight: 300;
 }
 
 .cta-button {
@@ -81,34 +88,86 @@ nav ul li a:hover {
     padding: 15px 30px;
     font-size: 18px;
     border-radius: 30px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform */
 }
 
 .cta-button:hover {
     background-color: #0056b3;
+    transform: scale(1.05); /* Slight scale effect for hover */
 }
 
+/* Footer */
 footer {
     background-color: #ffffff;
     text-align: center;
     padding: 20px;
     color: #6c757d;
+    font-size: 14px;
+    margin-top: 40px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Hero Section */
+    #hero {
+        padding: 80px 20px; /* Adjust padding for small screens */
+    }
+
     .hero-content h1 {
-        font-size: 36px;
+        font-size: 36px; /* Smaller text on mobile */
     }
 
     .cta-button {
         font-size: 16px;
+        padding: 12px 24px; /* Adjust button size for mobile */
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Stack navigation links on mobile */
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Larger font size on mobile */
+    }
+
+    footer {
+        font-size: 12px; /* Smaller footer text */
     }
 }
+
+/* Smooth Scroll Effect */
 html {
     scroll-behavior: smooth;
+}
+
+/* Card-like Design for Sections (For example, in 'projects.html') */
+section {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 40px;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Hover effect for section cards */
+}
+
+/* Link Buttons */
+.btn-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: #0056b3;
 }
