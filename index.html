@@ -1,183 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zurab Jashi</title>
-  <meta name="description" content="Zurab Jashi - Big Data Engineer at Bank of Georgia" />
-  <meta property="og:title" content="Zurab Jashi" />
-  <meta property="og:description" content="Zurab Jashi - Big Data Engineer at Bank of Georgia" />
-  <meta property="og:url" content="https://zjashi.github.io/" />
-  <meta property="og:image" content="https://github.com/ZJashi/zurabjashi.github.io/raw/main/Profile%20Photo.jpeg" />
-  <link rel="icon" href="your-favicon.ico" />
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-900 text-gray-100 font-sans">
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-4FFCWEC2WB", {
+        page_path: window.location.pathname,
+      });
+    </script>
+    <title>Zurab Jashi</title>
+    <meta name="description" content="Zurab Jashi - Big Data Engineer at Bank of Georgia" />
+    <meta property="og:title" content="Zurab Jashi" />
+    <meta property="og:description" content="Big Data Engineer at Bank of Georgia" />
+    <meta property="og:url" content="https://zjashi.github.io/" />
+    <meta property="og:image" content="your-image-link.jpg" />
+    <link rel="icon" href="your-favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" />
+  </head>
 
-  <!-- Header -->
-  <header class="text-center py-10 bg-gray-800">
-    <h1 class="text-4xl font-bold">Zurab Jashi</h1>
-    <p class="mt-2 text-lg">Big Data Engineer at <a href="https://bankofgeorgia.ge" class="text-teal-400 hover:underline">Bank of Georgia</a></p>
-    <nav class="mt-6">
-      <ul class="flex justify-center space-x-6 text-lg">
-        <li><a href="#about" class="hover:text-teal-400">About</a></li>
-        <li><a href="#experience" class="hover:text-teal-400">Experience</a></li>
-        <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
-        <li><a href="#mentoring" class="hover:text-teal-400">Mentoring</a></li>
-        <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- Social icons -->
-    <div class="mt-4 flex justify-center space-x-6">
-      <a href="https://github.com/ZJashi" target="_blank"><i class="fab fa-github text-2xl hover:text-teal-400"></i></a>
-      <a href="https://www.linkedin.com/in/zurab-jashi/" target="_blank"><i class="fab fa-linkedin text-2xl hover:text-teal-400"></i></a>
-    </div>
-  </header>
+  <body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="py-12">
+      <div class="container mx-auto text-center">
+        <h1 class="text-5xl font-bold">Zurab Jashi</h1>
+        <p class="mt-4 text-xl">Big Data Engineer at Bank of Georgia</p>
+        <nav class="mt-8">
+          <a href="#about" class="text-xl hover:text-teal-400 mx-4">About</a>
+          <a href="#experience" class="text-xl hover:text-teal-400 mx-4">Experience</a>
+          <a href="#projects" class="text-xl hover:text-teal-400 mx-4">Projects</a>
+          <a href="#mentoring" class="text-xl hover:text-teal-400 mx-4">Mentoring</a>
+          <a href="#contact" class="text-xl hover:text-teal-400 mx-4">Contact</a>
+        </nav>
 
-  <!-- About Section -->
-  <section id="about" class="py-16 bg-gray-800">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:space-x-10 px-6">
-      
-      <!-- Photo -->
-      <div class="flex-shrink-0 mb-8 md:mb-0">
-        <img src="https://github.com/ZJashi/zurabjashi.github.io/raw/main/Profile%20Photo.jpeg"
-             alt="Zurab Jashi"
-             class="w-56 h-56 rounded-full shadow-xl border-4 border-teal-400">
+        <!-- Social Media Icons -->
+        <div class="mt-6 flex justify-center space-x-6">
+          <a href="https://github.com/ZJashi" target="_blank" class="text-gray-400 hover:text-teal-400" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59..." />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/yourusername/" target="_blank" class="text-gray-400 hover:text-teal-400" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.5 2h-17A1.5 1.5 0..." />
+            </svg>
+          </a>
+        </div>
       </div>
-      
-      <!-- Text -->
-      <div class="max-w-3xl">
-        <h2 class="text-3xl font-bold mb-6 text-white">About Me</h2>
-        <p class="text-lg text-gray-300 leading-relaxed mb-4">
-          Hi, I’m Zurab. I’m currently a <strong>Big Data Engineer at the Bank of Georgia</strong>, 
-          working in the Customer Tribe’s Offers Hub. Together with developers and business teams, 
-          we enable internal teams to create and deliver personalized offers, as well as external 
-          partner products, directly to customers. My day-to-day involves Spark, Kafka, Airflow, 
-          Yarn, and Hadoop, ensuring that campaigns run reliably, efficiently, and on time. 
-          I design, monitor, and maintain both daily and continuous data pipelines to guarantee 
-          the quality and readiness of our information.
-        </p>
-        <p class="text-lg text-gray-300 leading-relaxed mb-4">
-          My journey began with a love for science and problem-solving. As a school student, 
-          I competed in international Math and Physics Olympiads, traveling the world as a 
-          member of the Georgian National Team. Winning a <strong>Silver Medal at the International Physics 
-          Olympiad 2018 in Lisbon</strong>—a first for my country—earned me a full scholarship to 
-          <strong>New York University</strong>, where I studied Mathematics and Machine Learning.
-        </p>
-        <p class="text-lg text-gray-300 leading-relaxed">
-          Driven by curiosity in quantum science, I continued my academic path at the 
-          <strong>Perimeter Institute for Theoretical Physics</strong>, one of the world’s top five 
-          physics research centers, completing an MSc in Quantum Physics and exploring the 
-          foundations of quantum science in depth. Today, I blend this scientific rigor with my 
-          engineering expertise to build scalable, high-performance data systems that make an impact. 
-          I also have wide interests in data/AI technologies, quantum science, and financial mathematics, 
-          and I plan to share various projects publicly along the way.
-        </p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-800">
+      <div class="container mx-auto max-w-4xl text-center flex flex-col md:flex-row items-center md:items-start md:text-left gap-10">
+        <div class="flex-shrink-0">
+          <img src="https://raw.githubusercontent.com/ZJashi/zurabjashi.github.io/main/Profile%20Photo.jpeg"
+               alt="Zurab Jashi Profile Photo"
+               class="rounded-2xl shadow-lg w-60 md:w-72 border-4 border-teal-500"/>
+        </div>
+        <div>
+          <h2 class="text-3xl font-semibold">About Me</h2>
+          <p class="mt-4 text-lg leading-relaxed">
+            Hi, I’m Zurab. I’m currently a Big Data Engineer at the Bank of Georgia, working in the Customer Tribe’s Offers Hub...
+          </p>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="py-16 bg-gray-900">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-6 text-white">Experience</h2>
-      
-      <div class="mb-8">
-        <h3 class="text-xl font-semibold text-teal-400">Big Data Engineer - Bank of Georgia</h3>
-        <p class="text-gray-400">Sep 2024 - Current</p>
-        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
-          <li>Work with business, backend, and analytics teams to build and maintain scalable data pipelines for personalized offers and mobile banking features.</li>
-          <li>Develop both streaming and batch ETL workflows using Apache Spark, Airflow, Kafka, PL/SQL and PostgreSQL.</li>
-          <li>Monitor and optimize pipeline performance to ensure data quality, reliability, and efficiency.</li>
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-900">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold">Experience</h2>
+        <ul class="mt-8 text-left max-w-3xl mx-auto">
+          <li class="mb-8">
+            <h3 class="text-xl font-semibold">Big Data Engineer - Bank of Georgia</h3>
+            <p class="mt-2 text-lg">Work with business, backend, and analytics teams...</p>
+            <p class="text-sm text-gray-400">Sep 2024 - Current</p>
+          </li>
+          <li class="mb-8">
+            <h3 class="text-xl font-semibold">ML Engineer - Perimeter Institute</h3>
+            <p class="mt-2 text-lg">Worked with Sebastian Wetzel on Twinned Regression...</p>
+            <p class="text-sm text-gray-400">May 2022 - Jan 2023</p>
+          </li>
         </ul>
       </div>
-      
-      <div>
-        <h3 class="text-xl font-semibold text-teal-400">ML Engineer - Perimeter Institute</h3>
-        <p class="text-gray-400">May 2022 - Jan 2023</p>
-        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
-          <li>Selected as one of 12 interns from over 400 applicants to work with Sebastian Wetzel on improving the Twinned Regression algorithm.</li>
-          <li>Implemented and benchmarked the algorithm against Random Forests and Neural Networks using pandas, NumPy, and scikit-learn.</li>
-          <li>Designed a semi-supervised extension of the method that outperformed baselines. Results available at <a href="https://arxiv.org/pdf/2301.01383" target="_blank" class="text-teal-400 hover:underline">arXiv</a>.</li>
-        </ul>
+    </section>
+
+    <!-- Mentoring Section -->
+    <section id="mentoring" class="py-20 bg-gray-900 relative overflow-hidden">
+      <div class="container mx-auto max-w-5xl text-center relative z-10">
+        <h2 class="text-4xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
+          Mentoring
+        </h2>
+        <p class="mt-4 text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+          I provide personalized mentoring in 
+          <strong class="text-teal-400">Physics</strong> (Quantum Technology, University-level, Olympiads), 
+          <strong class="text-teal-400">Mathematics</strong> (AI/ML, Finance, Business, University-level, Olympiads), 
+          and <strong class="text-teal-400">Data Engineering</strong> (Databases, SQL, Spark, Airflow).  
+          Whether you’re solving Olympiad problems, tackling university coursework, or building production-grade systems, I’ll guide you from fundamentals to mastery.
+        </p>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <h3 class="text-xl font-semibold text-teal-400 mb-3">Physics</h3>
+            <p class="text-gray-400 text-sm">Quantum Tech, Olympiad prep, and University-level physics.</p>
+          </div>
+          <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <h3 class="text-xl font-semibold text-teal-400 mb-3">Mathematics</h3>
+            <p class="text-gray-400 text-sm">AI/ML math, Finance, University coursework, Business math, Olympiads.</p>
+          </div>
+          <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <h3 class="text-xl font-semibold text-teal-400 mb-3">Data Engineering</h3>
+            <p class="text-gray-400 text-sm">Databases, SQL, Spark, Airflow, pipelines, and big data systems.</p>
+          </div>
+        </div>
+        <div class="mt-12">
+          <p class="text-2xl font-bold text-teal-400">Rate: <span class="text-white">$80/hour</span></p>
+          <p class="text-gray-400 mt-2 text-sm">All mentoring sessions are conducted online.</p>
+        </div>
       </div>
-    </div>
-  </section>
+      <div class="absolute inset-0 bg-gradient-to-r from-teal-500/10 via-transparent to-blue-500/10 pointer-events-none"></div>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="py-16 bg-gray-800">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-6 text-white">Projects</h2>
-      <p class="text-gray-300">I’ll be sharing some of my data, AI, and finance projects here soon.</p>
-    </div>
-  </section>
-
-<section id="mentoring" class="py-20 bg-gray-900 relative overflow-hidden">
-  <div class="container mx-auto max-w-5xl text-center relative z-10">
-    
-    <h2 class="text-4xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
-      Mentoring
-    </h2>
-    
-    <p class="mt-4 text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
-      I provide personalized mentoring in 
-      <strong class="text-teal-400">Physics</strong> (Quantum Technology, University-level, Olympiads), 
-      <strong class="text-teal-400">Mathematics</strong> (AI/ML, Finance, Business Applications, University-level, Olympiads), 
-      and <strong class="text-teal-400">Data Engineering</strong> (Databases, SQL, Spark, Airflow).  
-      Whether you’re solving Olympiad problems, working on advanced coursework, or building production-grade data systems, 
-      I’ll guide you from fundamentals to mastery.
-    </p>
-    
-    <!-- Subject Cards -->
-    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Physics -->
-      <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
-        <h3 class="text-xl font-semibold text-teal-400 mb-3">Physics</h3>
-        <p class="text-gray-400 text-sm leading-relaxed">Quantum Tech, Olympiad prep, and University-level physics with a problem-solving focus.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold">Contact Me</h2>
+        <p class="mt-4 text-lg">Feel free to reach out for opportunities, collaborations, or just to say hi!</p>
+        <a href="mailto:zurajashi09@gmail.com" class="mt-4 inline-block text-teal-400">Email Me</a>
       </div>
-      <!-- Mathematics -->
-      <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
-        <h3 class="text-xl font-semibold text-teal-400 mb-3">Mathematics</h3>
-        <p class="text-gray-400 text-sm leading-relaxed">AI/ML math foundations, Finance, University coursework, Business math, Olympiad problem-solving.</p>
-      </div>
-      <!-- Data Engineering -->
-      <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
-        <h3 class="text-xl font-semibold text-teal-400 mb-3">Data Engineering</h3>
-        <p class="text-gray-400 text-sm leading-relaxed">Databases, SQL, Spark, Airflow, pipelines, and modern big data systems.</p>
-      </div>
-    </div>
-    
-    <!-- Pricing -->
-    <div class="mt-12">
-      <p class="text-2xl font-bold text-teal-400">Rate: <span class="text-white">$80/hour</span></p>
-      <p class="text-gray-400 mt-2 text-sm">All mentoring sessions are conducted online.</p>
-    </div>
-  
-  </div>
+    </section>
 
-  <!-- Subtle gradient background for coolness -->
-  <div class="absolute inset-0 bg-gradient-to-r from-teal-500/10 via-transparent to-blue-500/10 pointer-events-none"></div>
-</section>
-
-
-
-  <!-- Contact -->
-  <section id="contact" class="py-16 bg-gray-800">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-6 text-white">Contact</h2>
-      <p class="text-gray-300">Feel free to reach me at: <a href="mailto:zurajashi09@gmail.com" class="text-teal-400 hover:underline">zurajashi09@gmail.com</a></p>
-    </div>
-  </section>
-
-  <footer class="text-center py-6 bg-gray-900 text-gray-500 text-sm">
-    © 2025 Zurab Jashi. All rights reserved.
-  </footer>
-
-</body>
+    <footer class="py-8 bg-gray-800 text-center text-lg">
+      <p>&copy; 2025 Zurab Jashi</p>
+    </footer>
+  </body>
 </html>
+
 
 
 
