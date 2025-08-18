@@ -8,14 +8,15 @@
   width: 200%;
   height: 200%;
   background: 
-    radial-gradient(circle at 25% 25%, rgba(255,105,180,0.10), transparent 70%), /* softer hot pink */
-    radial-gradient(circle at 70% 40%, rgba(186,85,211,0.12), transparent 70%),  /* lighter orchid purple */
-    radial-gradient(circle at 50% 75%, rgba(255,182,193,0.08), transparent 70%), /* light pink */
-    radial-gradient(circle at 80% 20%, rgba(64,224,208,0.05), transparent 70%);  /* faint teal accent */
+    radial-gradient(circle at 25% 25%, rgba(255,105,180,0.06), transparent 70%), /* very soft hot pink */
+    radial-gradient(circle at 70% 40%, rgba(186,85,211,0.07), transparent 70%),  /* faint orchid purple */
+    radial-gradient(circle at 50% 75%, rgba(255,182,193,0.05), transparent 70%), /* blush pink */
+    radial-gradient(circle at 80% 20%, rgba(64,224,208,0.04), transparent 70%);  /* subtle teal */
   animation: moveAuroraAbout 22s infinite alternate ease-in-out;
   filter: blur(65px);
   z-index: 0;
 }
+
 
 .aurora-about.aurora2 { animation-delay: -10s; }
 .aurora-about.aurora3 { animation-delay: -5s; }
