@@ -1,45 +1,147 @@
-<section id="about" class="py-16 bg-gray-800">
-  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:space-x-10 px-6">
-    
-    <!-- Photo -->
-    <div class="flex-shrink-0 mb-8 md:mb-0">
-      <img src="https://github.com/ZJashi/zurabjashi.github.io/raw/main/Profile%20Photo.jpeg"
-           alt="Zurab Jashi"
-           class="w-56 h-56 rounded-full shadow-xl border-4 border-teal-400">
-    </div>
-    
-    <!-- Text -->
-    <div class="max-w-3xl">
-      <h2 class="text-3xl font-bold mb-6 text-white">About Me</h2>
-      <p class="text-lg text-gray-300 leading-relaxed mb-4">
-        Hi, I’m Zurab. I’m currently a <strong>Big Data Engineer at the Bank of Georgia</strong>, 
-        working in the Customer Tribe’s Offers Hub. Together with developers and business teams, 
-        we enable internal teams to create and deliver personalized offers, as well as external 
-        partner products, directly to customers. My day-to-day involves Spark, Kafka, Airflow, 
-        Yarn, and Hadoop, ensuring that campaigns run reliably, efficiently, and on time. 
-        I design, monitor, and maintain both daily and continuous data pipelines to guarantee 
-        the quality and readiness of our information.
-      </p>
-      <p class="text-lg text-gray-300 leading-relaxed mb-4">
-        My journey began with a love for science and problem-solving. As a school student, 
-        I competed in international Math and Physics Olympiads, traveling the world as a 
-        member of the Georgian National Team. Winning a <strong>Silver Medal at the International Physics 
-        Olympiad 2018 in Lisbon</strong>—a first for my country—earned me a full scholarship to 
-        <strong>New York University</strong>, where I studied Mathematics and Machine Learning.
-      </p>
-      <p class="text-lg text-gray-300 leading-relaxed">
-        Driven by curiosity in quantum science, I continued my academic path at the 
-        <strong>Perimeter Institute for Theoretical Physics</strong>, one of the world’s top five 
-        physics research centers, completing an MSc in Quantum Physics and exploring the 
-        foundations of quantum science in depth. Today, I blend this scientific rigor with my 
-        engineering expertise to build scalable, high-performance data systems that make an impact. 
-        I also have wide interests in data/AI technologies, quantum science, and financial mathematics, 
-        and I plan to share various projects publicly along the way.
-      </p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zurab Jashi</title>
+  <meta name="description" content="Zurab Jashi - Big Data Engineer at Bank of Georgia" />
+  <meta property="og:title" content="Zurab Jashi" />
+  <meta property="og:description" content="Zurab Jashi - Big Data Engineer at Bank of Georgia" />
+  <meta property="og:url" content="https://zjashi.github.io/" />
+  <meta property="og:image" content="https://github.com/ZJashi/zurabjashi.github.io/raw/main/Profile%20Photo.jpeg" />
+  <link rel="icon" href="your-favicon.ico" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
 
-  </div>
-</section>
+  <!-- Header -->
+  <header class="text-center py-10 bg-gray-800">
+    <h1 class="text-4xl font-bold">Zurab Jashi</h1>
+    <p class="mt-2 text-lg">Big Data Engineer at <a href="https://bankofgeorgia.ge" class="text-teal-400 hover:underline">Bank of Georgia</a></p>
+    <nav class="mt-6">
+      <ul class="flex justify-center space-x-6 text-lg">
+        <li><a href="#about" class="hover:text-teal-400">About</a></li>
+        <li><a href="#experience" class="hover:text-teal-400">Experience</a></li>
+        <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+        <li><a href="#mentoring" class="hover:text-teal-400">Mentoring</a></li>
+        <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Social icons -->
+    <div class="mt-4 flex justify-center space-x-6">
+      <a href="https://github.com/ZJashi" target="_blank"><i class="fab fa-github text-2xl hover:text-teal-400"></i></a>
+      <a href="https://www.linkedin.com/in/zurab-jashi/" target="_blank"><i class="fab fa-linkedin text-2xl hover:text-teal-400"></i></a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-gray-800">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:space-x-10 px-6">
+      
+      <!-- Photo -->
+      <div class="flex-shrink-0 mb-8 md:mb-0">
+        <img src="https://github.com/ZJashi/zurabjashi.github.io/raw/main/Profile%20Photo.jpeg"
+             alt="Zurab Jashi"
+             class="w-56 h-56 rounded-full shadow-xl border-4 border-teal-400">
+      </div>
+      
+      <!-- Text -->
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-bold mb-6 text-white">About Me</h2>
+        <p class="text-lg text-gray-300 leading-relaxed mb-4">
+          Hi, I’m Zurab. I’m currently a <strong>Big Data Engineer at the Bank of Georgia</strong>, 
+          working in the Customer Tribe’s Offers Hub. Together with developers and business teams, 
+          we enable internal teams to create and deliver personalized offers, as well as external 
+          partner products, directly to customers. My day-to-day involves Spark, Kafka, Airflow, 
+          Yarn, and Hadoop, ensuring that campaigns run reliably, efficiently, and on time. 
+          I design, monitor, and maintain both daily and continuous data pipelines to guarantee 
+          the quality and readiness of our information.
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed mb-4">
+          My journey began with a love for science and problem-solving. As a school student, 
+          I competed in international Math and Physics Olympiads, traveling the world as a 
+          member of the Georgian National Team. Winning a <strong>Silver Medal at the International Physics 
+          Olympiad 2018 in Lisbon</strong>—a first for my country—earned me a full scholarship to 
+          <strong>New York University</strong>, where I studied Mathematics and Machine Learning.
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          Driven by curiosity in quantum science, I continued my academic path at the 
+          <strong>Perimeter Institute for Theoretical Physics</strong>, one of the world’s top five 
+          physics research centers, completing an MSc in Quantum Physics and exploring the 
+          foundations of quantum science in depth. Today, I blend this scientific rigor with my 
+          engineering expertise to build scalable, high-performance data systems that make an impact. 
+          I also have wide interests in data/AI technologies, quantum science, and financial mathematics, 
+          and I plan to share various projects publicly along the way.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-16 bg-gray-900">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-white">Experience</h2>
+      
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold text-teal-400">Big Data Engineer - Bank of Georgia</h3>
+        <p class="text-gray-400">Sep 2024 - Current</p>
+        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+          <li>Work with business, backend, and analytics teams to build and maintain scalable data pipelines for personalized offers and mobile banking features.</li>
+          <li>Develop both streaming and batch ETL workflows using Apache Spark, Airflow, Kafka, PL/SQL and PostgreSQL.</li>
+          <li>Monitor and optimize pipeline performance to ensure data quality, reliability, and efficiency.</li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="text-xl font-semibold text-teal-400">ML Engineer - Perimeter Institute</h3>
+        <p class="text-gray-400">May 2022 - Jan 2023</p>
+        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+          <li>Selected as one of 12 interns from over 400 applicants to work with Sebastian Wetzel on improving the Twinned Regression algorithm.</li>
+          <li>Implemented and benchmarked the algorithm against Random Forests and Neural Networks using pandas, NumPy, and scikit-learn.</li>
+          <li>Designed a semi-supervised extension of the method that outperformed baselines. Results available at <a href="https://arxiv.org/pdf/2301.01383" target="_blank" class="text-teal-400 hover:underline">arXiv</a>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 bg-gray-800">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-white">Projects</h2>
+      <p class="text-gray-300">I’ll be sharing some of my data, AI, and finance projects here soon.</p>
+    </div>
+  </section>
+
+  <!-- Mentoring -->
+  <section id="mentoring" class="py-16 bg-gray-900">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-white">Mentoring</h2>
+      <p class="text-gray-300 mb-4">
+        I mentor students in <strong>Physics, Mathematics, SQL, and Data Engineering</strong> at various levels. 
+        With my background in Olympiad competition, research, and industry, I help students not only prepare for exams 
+        but also build intuition and problem-solving skills.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-800">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-white">Contact</h2>
+      <p class="text-gray-300">Feel free to reach me at: <a href="mailto:zurajashi09@gmail.com" class="text-teal-400 hover:underline">zurajashi09@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 bg-gray-900 text-gray-500 text-sm">
+    © 2025 Zurab Jashi. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
 
 
 
