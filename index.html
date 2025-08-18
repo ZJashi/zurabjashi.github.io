@@ -115,57 +115,19 @@
     </div>
   </section>
 
-<!-- Mentoring Section -->
-<section id="mentoring" class="py-16 bg-gray-900">
-  <div class="container mx-auto max-w-5xl px-6">
-    
-    <!-- Title -->
-    <h2 class="text-3xl font-bold text-white mb-4">Mentoring</h2>
-    <p class="text-gray-300 mb-8">
-      I provide personalized mentoring in <strong class="text-teal-400">Physics</strong> (Quantum Technology, University-level, Olympiads), 
-      <strong class="text-teal-400">Mathematics</strong> (AI/ML, Finance, Business Applications, University-level, Olympiads), 
-      and <strong class="text-teal-400">Data Engineering</strong> (Databases, SQL, Spark, Airflow).  
-      Whether you’re solving Olympiad problems, working on advanced coursework, or building production-grade data systems, 
-      I’ll guide you from fundamentals to mastery.
-    </p>
-
-    <!-- Subject Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-gray-800 rounded-2xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-teal-400 mb-3">Physics</h3>
-        <p class="text-gray-400 text-sm">Quantum Tech, Olympiad prep, and University-level physics with a problem-solving focus.</p>
-      </div>
-      <div class="bg-gray-800 rounded-2xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-teal-400 mb-3">Mathematics</h3>
-        <p class="text-gray-400 text-sm">AI/ML math foundations, Finance, University coursework, Business math, Olympiad problem-solving.</p>
-      </div>
-      <div class="bg-gray-800 rounded-2xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-teal-400 mb-3">Data Engineering</h3>
-        <p class="text-gray-400 text-sm">Databases, SQL, Spark, Airflow, pipelines, and modern big data systems.</p>
-      </div>
-    </div>
-
-    <!-- Pricing -->
-    <div class="mt-8">
-      <p class="text-lg font-bold text-teal-400">Rate: <span class="text-white">$80/hour</span></p>
-      <p class="text-gray-400 mt-2 text-sm">All mentoring sessions are conducted online.</p>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- Aurora CSS -->
+<!-- Aurora CSS -->
 <style>
 .aurora {
   position: absolute;
+  inset: 0;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at 20% 20%, rgba(0,255,200,0.3), transparent 70%),
-              radial-gradient(circle at 80% 40%, rgba(0,150,255,0.25), transparent 70%),
-              radial-gradient(circle at 50% 80%, rgba(255,0,150,0.25), transparent 70%);
+  background: radial-gradient(circle at 20% 20%, rgba(45,212,191,0.3), transparent 70%),
+              radial-gradient(circle at 80% 40%, rgba(59,130,246,0.25), transparent 70%),
+              radial-gradient(circle at 50% 80%, rgba(147,51,234,0.25), transparent 70%);
   animation: moveAurora 20s infinite alternate ease-in-out;
-  filter: blur(60px);
+  filter: blur(80px);
+  z-index: 0;
 }
 .aurora2 {
   animation-delay: -10s;
@@ -180,6 +142,65 @@
   100% { transform: translate(-10%, -20%) rotate(-30deg); }
 }
 </style>
+
+<!-- Mentoring Section -->
+<section id="mentoring" class="py-16 bg-gray-900 relative overflow-hidden">
+  <!-- Aurora background layers -->
+  <div class="aurora"></div>
+  <div class="aurora aurora2"></div>
+  <div class="aurora aurora3"></div>
+
+  <div class="container mx-auto max-w-5xl px-6 relative z-10">
+    <!-- Title -->
+    <h2 class="text-3xl font-bold text-white mb-6">Mentoring</h2>
+
+    <!-- Description -->
+    <p class="text-gray-300 leading-relaxed mb-10">
+      I provide personalized mentoring in 
+      <strong class="text-teal-400">Physics</strong> (Quantum Technology, University-level, Olympiads), 
+      <strong class="text-teal-400">Mathematics</strong> (AI/ML, Finance, Business Applications, University-level, Olympiads), 
+      and <strong class="text-teal-400">Data Engineering</strong> (Databases, SQL, Spark, Airflow).  
+      Whether you’re solving Olympiad problems, working on advanced coursework, or building production-grade data systems, 
+      I’ll guide you from fundamentals to mastery.
+    </p>
+
+    <!-- Subject Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Physics -->
+      <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+        <h3 class="text-xl font-semibold text-teal-400 mb-3">Physics</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Quantum Tech, Olympiad prep, and University-level physics with a problem-solving focus.
+        </p>
+      </div>
+      <!-- Mathematics -->
+      <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+        <h3 class="text-xl font-semibold text-teal-400 mb-3">Mathematics</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          AI/ML math foundations, Finance, University coursework, Business math, Olympiad problem-solving.
+        </p>
+      </div>
+      <!-- Data Engineering -->
+      <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+        <h3 class="text-xl font-semibold text-teal-400 mb-3">Data Engineering</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Databases, SQL, Spark, Airflow, pipelines, and modern big data systems.
+        </p>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="mt-12 text-center">
+      <p class="text-2xl font-bold text-teal-400">
+        Rate: <span class="text-white">$80/hour</span>
+      </p>
+      <p class="text-gray-400 mt-2 text-sm">
+        All mentoring sessions are conducted online.
+      </p>
+    </div>
+  </div>
+</section>
+
   
 
   <!-- Contact -->
