@@ -8,15 +8,16 @@
   width: 200%;
   height: 200%;
   background: 
-    radial-gradient(circle at 25% 25%, rgba(255,105,180,0.22), transparent 70%), /* strong hot pink */
-    radial-gradient(circle at 60% 60%, rgba(255,182,193,0.18), transparent 70%), /* baby pink */
-    radial-gradient(circle at 45% 80%, rgba(255,140,180,0.15), transparent 70%), /* rose pink */
-    radial-gradient(circle at 70% 40%, rgba(186,85,211,0.08), transparent 70%),  /* faint orchid */
-    radial-gradient(circle at 50% 30%, rgba(255,255,255,0.05), transparent 70%); /* soft white glow */
+    radial-gradient(circle at 30% 20%, rgba(255,105,180,0.22), transparent 70%), /* hot pink at top-left */
+    radial-gradient(circle at 70% 30%, rgba(255,182,193,0.18), transparent 70%), /* baby pink at top-right */
+    radial-gradient(circle at 50% 75%, rgba(255,140,180,0.15), transparent 70%), /* rose pink lower */
+    radial-gradient(circle at 60% 50%, rgba(186,85,211,0.08), transparent 70%),  /* faint orchid mid */
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05), transparent 70%); /* soft white center glow */
   animation: moveAuroraAbout 22s infinite alternate ease-in-out;
   filter: blur(60px);
   z-index: 0;
 }
+
 
 
 
