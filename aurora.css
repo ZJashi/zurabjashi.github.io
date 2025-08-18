@@ -7,13 +7,13 @@
   position: absolute;
   width: 200%;
   height: 200%;
-  background: 
-    radial-gradient(circle at 25% 25%, rgba(255,105,180,0.18), transparent 70%), /* soft hot pink */
-    radial-gradient(circle at 70% 40%, rgba(186,85,211,0.22), transparent 70%),  /* orchid purple */
-    radial-gradient(circle at 50% 75%, rgba(255,182,193,0.15), transparent 70%), /* light pink */
-    radial-gradient(circle at 80% 20%, rgba(64,224,208,0.08), transparent 70%);  /* faint teal accent */
-  animation: moveAurora 22s infinite alternate ease-in-out;
-  filter: blur(65px);
+ filter: blur(45px);
+   background:
+     radial-gradient(circle at 25% 25%, rgba(255,105,180,0.12), transparent 70%),
+     radial-gradient(circle at 70% 40%, rgba(186,85,211,0.15), transparent 70%),
+     radial-gradient(circle at 50% 75%, rgba(255,182,193,0.10), transparent 70%),
+     radial-gradient(circle at 80% 20%, rgba(64,224,208,0.06), transparent 70%);
+   mix-blend-mode: screen;
   z-index: 0;
 }
 .aurora-about.aurora2 { animation-delay: -10s; }
