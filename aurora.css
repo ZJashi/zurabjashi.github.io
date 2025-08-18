@@ -1,0 +1,93 @@
+/* ============================
+   Aurora Background Styles
+   ============================ */
+
+/* -------- ABOUT SECTION (Pink / Purple) -------- */
+.aurora-about {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle at 20% 20%, rgba(255,0,150,0.35), transparent 70%),
+              radial-gradient(circle at 80% 40%, rgba(180,0,255,0.3), transparent 70%),
+              radial-gradient(circle at 50% 80%, rgba(255,100,200,0.25), transparent 70%);
+  animation: moveAuroraAbout 22s infinite alternate ease-in-out;
+  filter: blur(70px);
+  z-index: 0;
+}
+.aurora-about.aurora2 { animation-delay: -10s; }
+.aurora-about.aurora3 { animation-delay: -5s; }
+
+@keyframes moveAuroraAbout {
+  0% { transform: translate(-15%, -10%) rotate(0deg); }
+  50% { transform: translate(10%, 15%) rotate(25deg); }
+  100% { transform: translate(-10%, -20%) rotate(-25deg); }
+}
+
+/* -------- EXPERIENCE SECTION (Teal / Blue / Pink) -------- */
+.aurora-exp {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle at 20% 20%, rgba(0,255,200,0.25), transparent 70%),
+              radial-gradient(circle at 80% 40%, rgba(0,150,255,0.25), transparent 70%),
+              radial-gradient(circle at 40% 70%, rgba(255,0,180,0.25), transparent 70%);
+  animation: moveAuroraExp 25s infinite alternate ease-in-out;
+  filter: blur(60px);
+  z-index: 0;
+}
+.aurora-exp.aurora2 { animation-delay: -12s; }
+.aurora-exp.aurora3 { animation-delay: -6s; }
+
+@keyframes moveAuroraExp {
+  0% { transform: translate(-20%, -10%) rotate(0deg); }
+  50% { transform: translate(10%, 10%) rotate(30deg); }
+  100% { transform: translate(-10%, -20%) rotate(-30deg); }
+}
+
+/* -------- PROJECTS SECTION (Teal / Blue / Purple) -------- */
+.aurora-projects {
+  position: absolute;
+  inset: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 20% 20%, rgba(45,212,191,0.3), transparent 70%),
+              radial-gradient(circle at 80% 40%, rgba(59,130,246,0.25), transparent 70%),
+              radial-gradient(circle at 50% 80%, rgba(147,51,234,0.25), transparent 70%);
+  animation: moveAuroraProjects 20s infinite alternate ease-in-out;
+  filter: blur(80px);
+  z-index: 0;
+}
+.aurora-projects.aurora2 { animation-delay: -10s; }
+.aurora-projects.aurora3 { animation-delay: -5s; }
+
+@keyframes moveAuroraProjects {
+  0% { transform: translate(-20%, -10%) rotate(0deg); }
+  50% { transform: translate(10%, 10%) rotate(30deg); }
+  100% { transform: translate(-10%, -20%) rotate(-30deg); }
+}
+
+/* -------- MENTORING SECTION (Teal / Aqua / Violet) -------- */
+.aurora-mentoring {
+  position: absolute;
+  inset: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 20% 20%, rgba(20,255,200,0.3), transparent 70%),
+              radial-gradient(circle at 80% 40%, rgba(150,200,255,0.25), transparent 70%),
+              radial-gradient(circle at 50% 80%, rgba(200,100,255,0.25), transparent 70%);
+  animation: moveAuroraMentoring 24s infinite alternate ease-in-out;
+  filter: blur(75px);
+  z-index: 0;
+}
+.aurora-mentoring.aurora2 { animation-delay: -8s; }
+.aurora-mentoring.aurora3 { animation-delay: -4s; }
+
+@keyframes moveAuroraMentoring {
+  0% { transform: translate(-15%, -10%) rotate(0deg); }
+  50% { transform: translate(15%, 15%) rotate(20deg); }
+  100% { transform: translate(-10%, -25%) rotate(-20deg); }
+}
