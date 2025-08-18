@@ -9,9 +9,9 @@
   height: 200%;
   top: -50%;
   left: -50%;
-  background: radial-gradient(circle at 20% 20%, rgba(255,0,150,0.35), transparent 70%),
-              radial-gradient(circle at 80% 40%, rgba(180,0,255,0.3), transparent 70%),
-              radial-gradient(circle at 50% 80%, rgba(255,100,200,0.25), transparent 70%);
+  background: radial-gradient(circle at 20% 20%, rgba(0,255,180,0.35), transparent 70%),
+    radial-gradient(circle at 80% 40%, rgba(0,170,255,0.35), transparent 70%),
+    radial-gradient(circle at 50% 80%, rgba(255,100,180,0.15), transparent 70%);
   animation: moveAuroraAbout 22s infinite alternate ease-in-out;
   filter: blur(70px);
   z-index: 0;
