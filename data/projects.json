@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Offer Engine",
+    "description": "Personalized offer engine built with Spark and Kafka.",
+    "link": "https://github.com/ZJashi/offer-engine",
+    "image": "https://via.placeholder.com/300x160"
+  },
+  {
+    "title": "Quantum Simulator",
+    "description": "A minimal quantum circuit simulator in Python.",
+    "link": "https://github.com/ZJashi/quantum-simulator",
+    "image": "https://via.placeholder.com/300x160"
+  }
+]
