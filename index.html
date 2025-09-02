@@ -38,14 +38,24 @@
 
   <!-- About Section -->
   <section id="about" class="py-16 bg-gray-800 relative overflow-hidden">
-    <div class="max-w-5xl mx-auto px-6 text-center">
+    <!-- Aurora background layers -->
+    <div class="aurora-about"></div>
+    <div class="aurora-about aurora2"></div>
+    <div class="aurora-about aurora3"></div>
+
+    <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
       <h2 class="text-3xl font-bold text-white mb-6">About Me</h2>
-      <p class="text-gray-300 leading-relaxed">
-        I am Zurab Jashi, a Big Data Engineer at the Bank of Georgia. With a strong background in data engineering, 
-        I specialize in building scalable, high-performance data systems. My expertise spans across databases, 
-        data pipelines, and big data technologies. I am passionate about leveraging data to drive business insights 
-        and innovation.
-      </p>
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Profile Picture -->
+        <img src="https://github.com/ZJashi/zurabjashi.github.io/raw/main/Profile%20Photo.jpeg" alt="Zurab Jashi" class="w-48 h-48 rounded-full mx-auto md:mx-0 md:mr-8 shadow-lg">
+        <!-- Description -->
+        <p class="text-gray-300 leading-relaxed mt-6 md:mt-0">
+          I am Zurab Jashi, a Big Data Engineer at the Bank of Georgia. With a strong background in data engineering, 
+          I specialize in building scalable, high-performance data systems. My expertise spans across databases, 
+          data pipelines, and big data technologies. I am passionate about leveraging data to drive business insights 
+          and innovation.
+        </p>
+      </div>
     </div>
   </section>
 
